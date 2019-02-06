@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+/* h1 {
+    font-size: 1rem;
+    text-align: center;
+    text-decoration-color: aqua;
+
+}
+div{
+    border: 30px solid lightcoral;
+    height: 500vw;
+    margin: auto;
+    width: 50vw; 
+}
+.banner{
+ ;
+    background-position: center;
+    background-size: cover;
+    height: 50vw;
+    width: 100vw;
+    
+} */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25vh);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+     "header header header header"
+     "main main . sidebar"
+     "main main . ."
+     "footer footer footer footer";
+
+}
+header{
+    align-items: center;
+    background-color: lightcoral;
+    display: flex;
+    grid-area: header; 
+    justify-content: space-around;
+    padding: 0px 10px;
+}
+main{ background-color: blue;
+    grid-area: main;
+}
+.sidebar{
+    background-color: yellow;
+    grid-area: sidebar;
+}
+footer{
+    background-color: lightpink;
+   grid-area: footer;    
+}
